@@ -6,10 +6,12 @@
 
 <footer id="footer">
   <ul class="routes-ul">
-    {#each routes as { title, icon, path }}
-      <Link class="route-li-footer" to={path}>
-        <Icon {icon} />
-      </Link>
+    {#each routes as { icon, path, className }}
+      <li>
+        <Link class="route-li-footer {className}" to={path}>
+          <Icon {icon} />
+        </Link>
+      </li>
     {/each}
   </ul>
 </footer>
@@ -37,21 +39,16 @@
     display: flex;
     align-items: center;
     color: var(--main-text-color);
-
-    @media (width < 720px) {
-      gap: 10px;
-    }
-
-    @media (width > 720px) {
-      gap: 30px;
-    }
+    list-style-type: none;
+    gap: 10px;
 
     :global(.route-li-footer) {
       color: inherit;
       text-decoration: none;
       font-size: 16px;
       position: relative;
-      padding: 5px 2px;
+      padding: 5px 0;
+      height: 40px;
       transition: 0.2s;
       border-radius: 7px;
       display: grid;
@@ -61,6 +58,10 @@
       &:hover {
         background-color: white;
       }
+    }
+
+    :global(.route-li-footer.github) {
+      font-size: 30px;
     }
   }
 </style>
