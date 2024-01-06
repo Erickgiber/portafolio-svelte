@@ -147,8 +147,8 @@
       }
 
       .photo {
-        width: 100%;
-        height: 100%;
+        width: 350px;
+        height: 350px;
         max-width: 350px;
         max-height: 350px;
         border-radius: 20%;
@@ -156,6 +156,7 @@
         box-shadow: 5px 5px 10px 0 #0005;
         z-index: 50;
         user-select: none;
+        background-color: #ededed;
 
         @media (width < 400px) {
           max-height: 300px;
