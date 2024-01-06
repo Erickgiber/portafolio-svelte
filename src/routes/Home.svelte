@@ -34,7 +34,17 @@
 <main class:animated={!loaded} id="container">
   <div class="top">
     <h1 class="title">Hi, I'm Erick Ramírez</h1>
-    <img class="photo" src={photo} alt="Erick Ramírez" />
+    <img
+      style="width: 350px;
+    height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 20%;
+    object-fit: cover;"
+      class="photo"
+      src={photo}
+      alt="Erick Ramírez"
+    />
     <!-- <span class="info-text"> Full stack developer / Web Designer </span> -->
   </div>
 
@@ -147,12 +157,6 @@
       }
 
       .photo {
-        width: 350px;
-        height: 350px;
-        max-width: 350px;
-        max-height: 350px;
-        border-radius: 20%;
-        object-fit: cover;
         box-shadow: 5px 5px 10px 0 #0005;
         z-index: 50;
         user-select: none;
