@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
 :root {
   // ? Variables
@@ -12,7 +12,7 @@
   // ? Rules
   background-color: var(--main-bg);
   color: var(--main-text-color);
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -25,5 +25,17 @@
 body {
   height: 100%;
   overflow: hidden;
-  background-image: radial-gradient(ellipse at top, #000 0%, #202020 95%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.5) blur(1px);
+  }
 }

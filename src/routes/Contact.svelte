@@ -24,6 +24,8 @@
       <a target="_blank" href="https://twitter.com/Erickgiber">Erickgiber</a>
     </div>
   </div>
+  <br />
+  <p>Thank you for visit my web site!</p>
 </section>
 
 <style lang="scss">
@@ -44,9 +46,14 @@
     }
 
     a {
-      text-decoration: none;
       color: var(--dark-text-color);
       font-weight: bold;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 30px;
+      color: var(--dark-text-color);
     }
   }
 </style>

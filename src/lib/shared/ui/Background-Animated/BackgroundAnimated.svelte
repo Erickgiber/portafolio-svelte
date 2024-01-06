@@ -1,8 +1,7 @@
 <script lang="ts">
-  import "./styles.scss"
+  import './animation.scss'
 </script>
 
-<div class="star"></div>
-{#each Array(15) as _, index}
-  <div class="meteor-{index + 1}"></div>
+{#each Array(14) as _}
+  <div class="firefly"></div>
 {/each}
