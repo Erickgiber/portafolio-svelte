@@ -109,6 +109,20 @@
       min-height: 200px;
     }
 
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 13px;
+      font-weight: bold;
+      translate: -50% -50%;
+      transition: 0.2s;
+      text-align: center;
+      text-shadow: 1px 1px 0 #000;
+      opacity: 0;
+      scale: 1;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -149,21 +163,6 @@
       }
     }
 
-    span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-size: 13px;
-      font-weight: bold;
-      translate: -50% -50%;
-      transition: 0.2s;
-      text-align: center;
-      text-shadow: 1px 1px 0 #000;
-
-      opacity: 0.5;
-      scale: 1.2;
-    }
-
     &:hover {
       scale: 0.97;
     }
@@ -187,13 +186,13 @@
     }
 
     &:hover span {
-      opacity: 0;
-      scale: 1;
+      opacity: 0.5;
+      scale: 1.2;
     }
   }
 
   :global(.grid-item.animated) {
-    scale: 0.97;
+    scale: 0.9;
     opacity: 0;
   }
 </style>
