@@ -6,10 +6,6 @@ export const routes: TypeRoute[] = [
     path: '/projects',
   },
   {
-    title: 'Services',
-    path: '/services',
-  },
-  {
     title: 'Skills',
     path: '/skills',
   },
