@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
+
+:root {
+  // ? Variables
+  --main-bg: #252525;
+  --main-text-color: #ffffff;
+  --header-height: 70px;
+  --main-height: calc(100vh - var(--header-height));
+  --dark-text-color: darkgray;
+  --main-color: rgb(90, 23, 247);
+
+  // ? Rules
+  background-color: var(--main-bg);
+  color: var(--main-text-color);
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(*, *::before, *::after) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  background-image: radial-gradient(ellipse at top, #000 0%, #202020 95%);
+}
