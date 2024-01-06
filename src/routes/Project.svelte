@@ -15,7 +15,7 @@
     // @ts-ignore
     router.activeRoute.subscribe((val) => {
       const index = val.params.id
-      project = projects[Number(index)]
+      project = projects[Number(index) - 1]
     })
   }
 

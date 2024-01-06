@@ -39,7 +39,7 @@
       <Link
         style="transition: 0.{index}s;"
         class="grid-item {!loaded ? 'animated' : ''}"
-        to="/projects/{index}"
+        to="/projects/{index + 1}"
       >
         <img src={img} alt={title} />
         <h1>{title}</h1>
