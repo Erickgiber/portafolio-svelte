@@ -156,7 +156,7 @@
         box-shadow: 5px 5px 10px 0 #0005;
         z-index: 50;
         user-select: none;
-        background-color: #ededed;
+        background-color: #202020;
 
         @media (width < 400px) {
           max-height: 300px;
