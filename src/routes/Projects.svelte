@@ -193,7 +193,7 @@
   }
 
   :global(.grid-item.animated) {
-    scale: 0.95;
+    scale: 0.97;
     opacity: 0;
   }
 </style>

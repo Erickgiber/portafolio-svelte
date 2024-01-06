@@ -131,7 +131,7 @@
 
     .content {
       opacity: 0;
-      scale: 0.97;
+      scale: 0.99;
       transition: 0.4s;
 
       &.animated {

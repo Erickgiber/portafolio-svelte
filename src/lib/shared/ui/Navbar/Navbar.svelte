@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { onMount } from "svelte"
-  import { Link, useRouter } from "svelte-routing"
-  import { routes } from "./routes"
-  let activeRoute = "/"
+  import { onMount } from 'svelte'
+  import { Link, useRouter } from 'svelte-routing'
+  import { routes } from './routes'
+  let activeRoute = '/'
   let loading = true
+
   const router = useRouter()
 
   $: if (!loading) {
@@ -28,7 +29,7 @@
     {#each routes as { title, path }}
       <Link
         style={activeRoute === path
-          ? "background-color: var(--main-color); padding: 5px 10px; border-radius: 5px 5px 0 0;"
+          ? 'background-color: var(--main-color); padding: 5px 10px; border-radius: 5px 5px 0 0;'
           : null}
         class="route-li"
         to={path}>{title}</Link
@@ -76,22 +77,22 @@
       :global(.logo-link) {
         color: inherit;
         text-decoration: none;
-      }
 
-      &::after {
-        transition: 0.5s;
-        content: "";
-        width: 20%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: var(--main-color);
-        height: 3px;
-      }
+        &::after {
+          transition: 0.5s;
+          content: '';
+          width: 20%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: var(--main-color);
+          height: 3px;
+        }
 
-      &:hover::after {
-        transition: 0.2s;
-        width: 100%;
+        &:hover::after {
+          transition: 0.2s;
+          width: 100%;
+        }
       }
     }
   }
@@ -118,7 +119,7 @@
 
       &::after {
         position: absolute;
-        content: "";
+        content: '';
         width: 0%;
         transition: 0.5s;
         background-color: var(--main-color);
